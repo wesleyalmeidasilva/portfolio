@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a:visited {
+  color: inherit;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100vw;
+  min-height: 100vw;
+  background-color: #41393E;
+}
+

@@ -1,0 +1,193 @@
+/* KEYFRAMES */
+
+@keyframes reactLogoSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.containerIntroSite {
+  display: flex;
+  width: 100%;
+  height: 900px;
+}
+
+/* LEFT SIDE */
+
+.introLeftSide {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #F4EDEA;
+  width: 40%;
+}
+
+.topLeftSide {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.topLeftSide a {
+  margin-top: 15px;
+  margin-right: 80px;
+  font-size: 64px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #41393E;
+}
+
+/* RIGHT SIDE */
+
+.introRightSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #41393E;
+  width: 60%;
+}
+
+.introRightSide ul {
+  display: flex;
+  justify-content: end;
+  margin-right: 80px;
+  margin-top: 35px;
+}
+
+.introRightSide ul a {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-right: 50px;
+  border-bottom: 4px solid #E08E45;
+  font-weight: bold;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.imgProfile {
+  position: relative;
+  top: 30%;
+  left: 90%;
+  background: #F4EDEA;
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.imgProfileInterior {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  background: black;
+  height: 550px;
+  width: 550px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url('/public/profile.svg');
+  background-position: 50% 50%;
+}
+
+.introSiteIcons {
+  height: 100px;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.introSiteIcons img {
+  max-width: 100%;
+  margin-left: 20px;
+}
+
+.introSiteIcons .nodeIcon {
+  padding-top: 8px;
+  width: 100px;
+}
+
+.introSiteIcons .mysqlIcon {
+  padding-bottom: 25%;
+  width: 130px;
+}
+
+.introSiteIcons .reactIcon {
+  width: 180px;
+  margin-left: 0px;
+}
+
+/* TEXT AREA */
+
+.introSiteText span {
+  display: block;
+}
+
+.introSiteText {
+  margin-left: 280px;
+  color: white;
+  font-weight: bold;
+}
+
+.introSiteText .firstSpan {
+  font-size: 24px;
+}
+
+.introSiteText .secondSpan {
+  font-size: 96px;
+  margin-left: 22px;
+  line-height: 80%;
+}
+
+.introSiteText .thirdSpan {
+  display: flex;
+  margin-left: 112px;
+}
+
+.introSiteText .thirdSpan img {
+  animation: reactLogoSpin 4s linear infinite;
+  margin-left: 6px;
+}
+
+.introSiteText .forthSpan {
+  color: #F4EDEA;
+  font-size: 20px;
+  margin-left: 74px;
+}
+
+.introSiteTextBtnContainer {
+  display: flex;
+  margin-top: 12px;
+}
+
+.introSiteTextBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  flex-direction: column;
+  background-color: #F4EDEA;
+  color: #41393E;
+  margin-left: 16px;
+  padding: 22px;
+  border-radius: 26px;
+}
+
+.introSiteTextBtn span {
+  color: #41393E;
+  line-height: 18px;
+}
+
+/* Contact Icons */
+
+.introSiteContact {
+  display: flex;
+  justify-content: end;
+  margin-right: 66px;
+  margin-bottom: 22px;
+}
+
+.introSiteContact img {
+  margin-right: 22px;
+}
