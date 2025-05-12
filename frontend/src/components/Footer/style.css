@@ -1,0 +1,29 @@
+.footerContainer {
+  display: flex;
+  justify-content: end;
+  height: 220px;
+  width: 100%;
+}
+
+.footerContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 80px;
+  padding: 20px 0px;
+}
+
+.footerContactImages img {
+  margin: 0px 8px;
+}
+
+.footerContactTitle {
+  font-size: 36px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.footerContactName {
+  color: #f4edea77;
+}

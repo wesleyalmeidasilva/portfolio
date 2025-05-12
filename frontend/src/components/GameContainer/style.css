@@ -1,0 +1,15 @@
+.gameContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.gameContainerInterior {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96%;
+  min-height: 850px;
+  background-color: #72C14C;
+}

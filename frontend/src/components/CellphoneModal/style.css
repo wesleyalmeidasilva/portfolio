@@ -1,0 +1,138 @@
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.phoneModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 42px 42px;
+  width: 400px;
+  height: 600px;
+  border-radius: 82px;
+  background-color: #F7F4E5;
+}
+
+.phoneModal h2 {
+  color: #736D5D;
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.gridCellphoneProjects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.cellphoneProject {
+  border-radius: 24px;
+  width: 100px;
+  height: 100px;
+  background-color: #D9D9D9;
+}
+
+.cellPhoneProjectsBtn {
+  width: 30px;
+  height: 30px;
+  background-color: #D4D1C2;
+  border: 6px solid #1DB09A;
+  border-radius: 50%;
+}
+
+/* Cellphone Icons */
+
+.cellphoneSignal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cellphoneSignal .signal {
+  margin-right: 6px;
+}
+
+.cellphoneSignal img {
+  width: 30px;
+}
+
+.locationIcon {
+  width: 40px;
+}
+
+.topIcons {
+  padding: 0px 22px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dateNow {
+  color: #E0DBC8;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 22px;
+}
+
+.cellphoneProject {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #E08E45;
+  cursor: pointer;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.imgContainerSpan {
+  position: absolute;
+  bottom: 1px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: default;
+}
+
+.cellphoneProject img {
+  width: 260%;
+}
+
+.cellphoneProject .cellPhoneAboutMeImg {
+  width: 100%;
+}
+
+.cellphoneProject .cellPhoneContactImg {
+  width: 100%;
+}
+
+
+.unavailableProject {
+  position: absolute;
+  transform: rotate(30deg) scale(60%);
+  right: -30px;
+  top: -14px;
+  background: #72C14C;
+  padding: 6px;
+}
+
+

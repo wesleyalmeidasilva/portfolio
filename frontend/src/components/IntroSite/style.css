@@ -9,7 +9,7 @@
 .containerIntroSite {
   display: flex;
   width: 100%;
-  height: 900px;
+  height: 90vh;
 }
 
 /* LEFT SIDE */
@@ -19,7 +19,7 @@
   justify-content: space-between;
   flex-direction: column;
   background-color: #F4EDEA;
-  width: 40%;
+  width: 40vw;
 }
 
 .topLeftSide {
@@ -29,15 +29,19 @@
 }
 
 .topLeftSide a {
-  margin-top: 15px;
-  margin-right: 80px;
-  font-size: 64px;
+  margin-top: 1.5vw;
+  margin-right: 2vw;
+  font-size: clamp(1vw, 3.5vw, 3.5vw);
   font-weight: bold;
   text-decoration: none;
   color: #41393E;
 }
 
 /* RIGHT SIDE */
+
+.topRightSide a {
+  cursor: pointer;
+}
 
 .introRightSide {
   display: flex;
@@ -50,15 +54,14 @@
 .introRightSide ul {
   display: flex;
   justify-content: end;
-  margin-right: 80px;
-  margin-top: 35px;
+  margin-right: 3vw;
+  margin-top: 2vw;
 }
 
 .introRightSide ul a {
-  font-size: 24px;
-  margin-top: 30px;
-  margin-right: 50px;
-  border-bottom: 4px solid #E08E45;
+  font-size: 1.5vw;
+  margin-right: 4vw;
+  border-bottom: 0.2vw solid #E08E45;
   font-weight: bold;
   text-decoration: none;
   color: #FFFFFF;
@@ -66,11 +69,11 @@
 
 .imgProfile {
   position: relative;
-  top: 30%;
-  left: 90%;
+  top: 15vw;
+  left: 36vw;
   background: #F4EDEA;
-  height: 600px;
-  width: 600px;
+  height: 30vw;
+  width: 30vw;
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
@@ -79,42 +82,47 @@
   position: relative;
   top: 50%;
   left: 50%;
-  background: black;
-  height: 550px;
-  width: 550px;
+  height: 100%;
+  width: 100%;
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  background-image: url('/public/profile.svg');
+  background-image: url('/profile.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: 50% 50%;
 }
 
 .introSiteIcons {
-  height: 100px;
+  height: 6vw;
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 1.2vw;
 }
 
 .introSiteIcons img {
   max-width: 100%;
-  margin-left: 20px;
+  margin-left: 1vw;
+}
+
+.introSiteIcons .figmaIcon {
+  width: 7vw;
 }
 
 .introSiteIcons .nodeIcon {
-  padding-top: 8px;
-  width: 100px;
+  padding-top: 0.4vw;
+  width: 6vw;
 }
 
 .introSiteIcons .mysqlIcon {
-  padding-bottom: 25%;
-  width: 130px;
+  padding-bottom: 2.3vw;
+  width: 7vw;
 }
 
 .introSiteIcons .reactIcon {
-  width: 180px;
-  margin-left: 0px;
+  width: 10vw;
+  margin-left: -1vw;
 }
 
 /* TEXT AREA */
@@ -124,59 +132,71 @@
 }
 
 .introSiteText {
-  margin-left: 280px;
+  margin-left: 16vw;
   color: white;
   font-weight: bold;
 }
 
 .introSiteText .firstSpan {
-  font-size: 24px;
+  white-space: nowrap;
+  font-size: 1.4vw;
 }
 
 .introSiteText .secondSpan {
-  font-size: 96px;
-  margin-left: 22px;
+  white-space: nowrap;
+  font-size: 4vw;
+  margin-left: 1.8vw;
   line-height: 80%;
 }
 
 .introSiteText .thirdSpan {
   display: flex;
-  margin-left: 112px;
+  white-space: nowrap;
+  margin-left: 6vw;
+  font-size: 1.4vw;
 }
 
 .introSiteText .thirdSpan img {
   animation: reactLogoSpin 4s linear infinite;
-  margin-left: 6px;
+  margin-left: 0.2vw;
+  width: 2vw;
 }
 
 .introSiteText .forthSpan {
+  line-height: 2vw;
+  white-space: nowrap;
   color: #F4EDEA;
-  font-size: 20px;
-  margin-left: 74px;
+  font-size: 1.6vw;
+  margin-left: 4vw;
 }
 
 .introSiteTextBtnContainer {
   display: flex;
-  margin-top: 12px;
+  margin-top: 0.6vw;
 }
 
 .introSiteTextBtn {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 50px;
+  width: 12vw;
+  height: 2.2vw;
   flex-direction: column;
   background-color: #F4EDEA;
   color: #41393E;
-  margin-left: 16px;
-  padding: 22px;
-  border-radius: 26px;
+  margin-left: 1.8vw;
+  padding: 1vw;
+  border-radius: 1vw;
+  font-size: 0.7vw;
 }
 
 .introSiteTextBtn span {
   color: #41393E;
-  line-height: 18px;
+  line-height: 1vw;
+}
+
+.myProjectsBtn {
+  cursor: pointer;
 }
 
 /* Contact Icons */
@@ -184,10 +204,11 @@
 .introSiteContact {
   display: flex;
   justify-content: end;
-  margin-right: 66px;
-  margin-bottom: 22px;
+  margin-right: 2vw;
+  margin-bottom: 2vw;
 }
 
 .introSiteContact img {
-  margin-right: 22px;
+  width: 3vw;
+  margin-right: 1vw;
 }

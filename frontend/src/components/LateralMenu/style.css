@@ -1,0 +1,8 @@
+.lateralMenuBtn {
+  position: fixed;
+  background: none;
+  border: none;
+  right: 4vw;
+  top: 8vw;
+  cursor: pointer;
+}

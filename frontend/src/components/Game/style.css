@@ -1,0 +1,64 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: -70px;
+  background-color: #F4EDEA;
+  width: 1280px;
+  height: 900px;
+}
+
+.gameTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.gameTitleFirstSpan {
+  transform: rotate(-90deg);
+}
+
+.gameTitleSecondSpan {
+  font-size: 82px;
+}
+
+.gameTitle img {
+  width: 66px;
+  margin-left: 12px;
+}
+
+.gameTextContent {
+  max-width: 60%;
+  text-align: center;
+}
+
+.gameTextContent h2 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.gameTextContent p {
+  font-size: 24px;
+  margin-top: 62px;
+}
+
+.gameTextContent span {
+  color: #169873;
+}
+
+.gameBottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.gameBottom button {
+  margin-bottom: 44px;
+}
+
+.gameBottom p {
+  color: #41393E;
+  margin-bottom: 8px;
+}

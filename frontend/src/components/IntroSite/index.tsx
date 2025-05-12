@@ -1,10 +1,24 @@
 import "./style.css"
-import React from 'react'
+import React, { useContext } from 'react'
+import MainContext from '../../Context/MainProvider';
 
 function IntroSite () {
+
+  const context = useContext(MainContext)
+  
+    if (!context) {
+      return null;
+    }
+  
+    const { setModalStatus } = context;
+  
+    const toggleModal = () => {
+      setModalStatus(true)
+    }
+
   return (
     <div className='containerIntroSite'>
-
+      
       <div className="introLeftSide">
         <div className="topLeftSide">
           <a href="#">Início</a>
@@ -23,7 +37,7 @@ function IntroSite () {
       <div className="introRightSide">
         <div className="topRightSide">
           <ul>
-            <a href="#">Meus Projetos</a>
+            <a onClick={toggleModal}>Meus Projetos</a>
             <a href="#">Sobre mim</a>
             <a href="#">Logar</a>
           </ul>
@@ -40,15 +54,15 @@ function IntroSite () {
               <span>Quero meu</span>
               <span>Website!</span>
             </a>
-            <a className="introSiteTextBtn" href='#'>
+            <a className="introSiteTextBtn myProjectsBtn" onClick={toggleModal}>
               <span>Meus Projetos</span>
             </a>
           </div>
         </div>
         <div className="introSiteContact">
-          <a href='#'><img src="/instagram.svg" alt="Instagram Contact Icon" /></a>
-          <a href='#'><img src="/github.svg" alt="Github Perfil Icon" /></a>
-          <a href='#'><img src="/linkedin.svg" alt="Linkedin Perfil Icon" /></a>
+          <a href='https://www.instagram.com/sr.nkens/' target="_blank" rel="noopener noreferrer" ><img src="/instagram.svg" alt="Instagram Contact Icon" /></a>
+          <a href='https://github.com/wesleyalmeidasilva' target="_blank" rel="noopener noreferrer"><img src="/github.svg" alt="Github Perfil Icon" /></a>
+          <a href='https://www.linkedin.com/in/wesley-almeida-silva-61219a262/' target="_blank" rel="noopener noreferrer"><img src="/linkedin.svg" alt="Linkedin Perfil Icon" /></a>
         </div>
       </div>
     </div>
@@ -69,5 +83,3 @@ function IntroSite () {
       </div>
 
 export default IntroSite
-
-console.log('oi')
