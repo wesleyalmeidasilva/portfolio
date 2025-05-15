@@ -1,5 +1,5 @@
 import "./style.css"
-import Game from "../Game/index.jsx"
+import Game from "../Game/index.tsx"
 
 function GameContainer () {
   return (

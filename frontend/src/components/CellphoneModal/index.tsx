@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useContext } from 'react';
-import Cellphone from '../Cellphone';
-import toggleCellphoneModal from '../../utils/toggleCellphoneModal'
+// import Cellphone from '../Cellphone';
+// import toggleCellphoneModal from '../../utils/toggleCellphoneModal'
 import MainContext from '../../Context/MainProvider/index'
 import "./style.css"
 
@@ -11,7 +11,7 @@ function CellphoneModal () {
   const context = useContext(MainContext)
 
   if (!context) {
-    return null;
+    throw new Error("MyContext not found");
   }
 
   const { modalStatus, setModalStatus } = context;

@@ -11,7 +11,7 @@ function LateralMenu () {
     return null;
   }
 
-  const { modalStatus, setModalStatus } = context;
+  const { setModalStatus } = context;
 
   const toggleCellphone = () => {
     setModalStatus(true)

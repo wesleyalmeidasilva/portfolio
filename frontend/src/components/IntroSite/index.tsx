@@ -1,5 +1,5 @@
 import "./style.css"
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import MainContext from '../../Context/MainProvider';
 
 function IntroSite () {

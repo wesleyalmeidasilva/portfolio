@@ -1,13 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import React from 'react'
-import IntroSite from './components/introSite/index.tsx'
-import ProjectPart from './components/ProjectPart/index.jsx'
-import LateralMenu from './components/LateralMenu/index.jsx'
-import GameContainer from './components/GameContainer/index.jsx'
+import IntroSite from './components/IntroSite/index.tsx'
+import ProjectPart from './components/ProjectPart/index.js'
+import LateralMenu from './components/LateralMenu/index.js'
+import GameContainer from './components/GameContainer/index.js'
 import Footer from './components/Footer/index.jsx'
-import CellphoneModal from './components/CellphoneModal/index.jsx'
+import CellphoneModal from './components/CellphoneModal/index.js'
 import { MainProvider } from './Context/MainProvider/index.jsx'
 
 createRoot(document.getElementById('root')!).render(

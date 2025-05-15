@@ -1,5 +1,5 @@
 import "./style.css"
-import Cellphone from "../Cellphone/index.jsx"
+import Cellphone from "../Cellphone/index.js"
 import MainContext from '../../Context/MainProvider/index.js';
 import { useContext } from 'react';
 
@@ -56,7 +56,7 @@ function ProjectPart () {
           </div>
         </div>
         <button className="seeMoreBtn" onClick={toggleModal}>
-          <span>Veja Mais no</span> <Cellphone size='1'/>
+          <span>Veja Mais no</span> <Cellphone/>
         </button>
       </div>
     </div>
