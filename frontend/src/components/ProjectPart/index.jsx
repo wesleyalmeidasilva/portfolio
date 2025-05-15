@@ -56,7 +56,7 @@ function ProjectPart () {
           </div>
         </div>
         <button className="seeMoreBtn" onClick={toggleModal}>
-          <span>Veja Mais no</span> <Cellphone/>
+          <span>Veja Mais no</span> <Cellphone size='1'/>
         </button>
       </div>
     </div>

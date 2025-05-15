@@ -1,6 +1,6 @@
 import "./style.css"
 
-function Cellphone ({ size }) {
+function Cellphone ({ size = 1 }) {
 
   const newWidth = `${size * 1.8}vw`
   const newHeight = `${size * 2.6}vw`

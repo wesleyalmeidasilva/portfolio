@@ -4,10 +4,9 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  top: -70px;
   background-color: #F4EDEA;
-  width: 1280px;
-  height: 900px;
+  width: 58vw;
+  aspect-ratio: 1280 / 900;
 }
 
 .gameTitle {
@@ -18,16 +17,17 @@
 }
 
 .gameTitleFirstSpan {
+  font-size: 0.7vw;
   transform: rotate(-90deg);
 }
 
 .gameTitleSecondSpan {
-  font-size: 82px;
+  font-size: 3.4vw;
 }
 
 .gameTitle img {
-  width: 66px;
-  margin-left: 12px;
+  width: 4vw;
+  margin-left: 0.4vw;
 }
 
 .gameTextContent {
@@ -36,13 +36,13 @@
 }
 
 .gameTextContent h2 {
-  font-size: 60px;
+  font-size: 2.6vw;
   font-weight: bold;
 }
 
 .gameTextContent p {
-  font-size: 24px;
-  margin-top: 62px;
+  font-size: 1.4vw;
+  margin-top: 3vw;
 }
 
 .gameTextContent span {
@@ -55,10 +55,14 @@
 }
 
 .gameBottom button {
-  margin-bottom: 44px;
+  margin: auto;
+  width: 14vw;
+  margin-bottom: 4.5vw;
+  font-size: 1vw;
 }
 
 .gameBottom p {
   color: #41393E;
-  margin-bottom: 8px;
+  font-size: 1vw;
+  margin-bottom: 0.2vw;
 }
